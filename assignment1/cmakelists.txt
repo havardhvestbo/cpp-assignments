@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(assignment1)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wall -Wextra")
+
+configure_file(${CMAKE_SOURCE_DIR}/temperatures.dat ${CMAKE_BINARY_DIR}/temperatures.dat COPYONLY)
+
+add_executable(oppga oppga.cpp)
+add_executable(oppgb oppgb.cpp)
